@@ -1,0 +1,80 @@
+<template>
+	<div>
+		<top-title :title='"机器人统计"' />
+		<rob-body :robots='robots' />
+	</div>
+</template>
+
+<script>
+	const topTitle = () => import('@/components/topTitle');
+	const RobBody = () => import('@/components/Statistical/stRobot/RobBody');
+	export default{
+		components:{
+			topTitle,
+			RobBody
+		},
+		data(){
+			return{
+				robots:[{
+					title:'总留言数',
+					num:'200',
+					chiles:[
+						{
+							title:'有效会话量',
+							num:'0'
+						},
+						{
+							title:'有效会话量',
+							num:'0'
+						}
+					]
+				},
+				{
+					title:'待处理留言数',
+					num:'5000',
+					chiles:[
+						{
+							title:'有效会话量',
+							num:'0'
+						},
+						{
+							title:'有效会话量',
+							num:'0'
+						}
+					]
+				},
+				{
+					title:'已处理留言数',
+					num:'5000',
+					chiles:[
+						{
+							title:'有效会话量',
+							num:'0'
+						},
+						{
+							title:'有效会话量',
+							num:'0'
+						}
+					]
+				},
+				{
+					title:'已处理留言数',
+					num:'5000',
+					chiles:[
+						{
+							title:'有效会话量',
+							num:'0'
+						},
+						{
+							title:'有效会话量',
+							num:'--'
+						}
+					]
+				}]
+			}
+		}
+	}
+</script>
+
+<style>
+</style>
